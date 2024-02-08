@@ -1,3 +1,4 @@
+//WAP to find Palindrom or Not
 #include<stdio.h>
 #include<string.h>
 void main()
