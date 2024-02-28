@@ -56,8 +56,8 @@ int winner(char arr[9], int I)
 char c;
 if(I%2==0) {c='X';}
 if(I%2==1) {c='O';}
-if(arr[0]==c&&arr[1]==arr[2] || arr[3]==c&&arr[4]==arr[5] || arr[6]==c&&arr[7]==arr[8]){return 1;}
-if(arr[0]==c&&arr[3]==arr[6] || arr[1]==c&&arr[4]==arr[7] || arr[2]==c&&arr[5]==arr[8]){return 1;}
-if(arr[0]==c&&arr[4]==arr[8] || arr[2]==c&&arr[4]==arr[6] ){return 1;}
+if(arr[0]==c && arr[1]==c && c==arr[2] || arr[3]==c && arr[4]==c && c==arr[5] || arr[6]==c && arr[7]==c&&c==arr[8]){return 1;}
+if(arr[0]==c && arr[3]==c && c==arr[6] || arr[1]==c && arr[4]==c && c==arr[7] || arr[2]==c && arr[5]==c && c==arr[8]){return 1;}
+if(arr[0]==c && arr[4]==c && c==arr[8] || arr[2]==c && arr[4]==c && c==arr[6] ){return 1;}
 else { printf("No Result.\n");}
 }
